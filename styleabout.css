@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  height: 35vh;
+  height: 70vh;
 }
 
 header h1 {
@@ -27,6 +27,9 @@ header h1 {
 }
 
 header p {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -70%);
   color: rgb(0, 0, 0);
   padding: 10px;
   text-align: center;
