@@ -4,8 +4,7 @@
   padding: 0;
 }
 h1 {
-  height: 30vh;
-  font-size: 10rem;
+  font-size: 3rem;
 }
 
 body {
@@ -16,6 +15,25 @@ body {
     rgb(255, 255, 255)
   ); */
   color: rgba(255, 255, 255);
+}
+
+header {
+  height: 35vh;
+}
+
+header h1 {
+  padding: 10px;
+  background: url(./img/umbrella.jpg) no-repeat 20% / cover;
+}
+
+header p {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+}
+.school h1 {
+  background: url(./img/penpaper.jpg) no-repeat 10% 10% / cover;
+  color: rgb(0, 0, 0);
 }
 
 .skill_item {
@@ -37,7 +55,7 @@ body {
 .item_text {
   height: 200px;
   margin: 25px;
-  width: 100%;
+  width: 100vw;
   background-color: rgb(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -45,32 +63,18 @@ body {
 }
 
 .item_text h3 {
-  font-size: 4rem;
-}
-
-header {
-  margin: 0 15%;
-  height: 30vh;
-  background: url(./img/umbrella.jpg) no-repeat 20% / cover;
-  background-position: 0 -0.3%;
-}
-
-header h1 {
-  position: relative;
-  top: 10%;
-  left: 10%;
-}
-
-.school h1 {
-  background: url(./img/penpaper.jpg);
-  background-position: 70% 20%;
-  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-align: center;
 }
 
 .skills h1 {
   background: url(./img/biurko.jpg);
-  background-position: 0 30%;
 }
 section h1 {
   text-align: center;
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
 }

@@ -101,6 +101,8 @@ a {
   margin-right: 5px;
 }
 
+/* media queries */
+
 @media (min-width: 700px) {
   .container h1 {
     color: var(--primary-color);
