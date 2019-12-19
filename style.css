@@ -64,6 +64,7 @@ a {
 }
 .navBar li {
   color: var(--primary-color);
+  font-weight: bold;
   font-size: 2rem;
   padding: 10px;
   font-family: "Monserrat", sans-serif;
