@@ -27,8 +27,8 @@ a {
 .top {
   position: relative;
   height: 100vh;
-  width: 100%;
-  background: url("./img/background-view.jpg") no-repeat center 20% / cover;
+  width: 100vw;
+  background: url("./img/background-view.jpg") no-repeat 70% -1%;
 }
 
 .top:after {
@@ -43,7 +43,15 @@ a {
   box-shadow: inset 300px 250px 250px #000000;
 }
 
-.container h1 {
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100vw;
+  justify-content: center;
+}
+
+/* .container h1 {
   color: var(--primary-color);
   position: absolute;
   margin-left: 2rem;
@@ -53,16 +61,24 @@ a {
   font-family: "Permanent Marker", "Pacifico", sans-serif;
   font-size: 6rem;
   z-index: 2;
+} */
+
+.container h1 {
+  align-self: center;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-top: 5rem;
+  font-family: "Permanent Marker", "Pacifico", sans-serif;
+  font-size: 3rem;
+  z-index: 2;
 }
 
 .navBar {
-  position: absolute;
-  margin-left: 2rem;
-  left: 5rem;
-  top: 15rem;
+  margin-top: 5rem;
   z-index: 2;
 }
 .navBar li {
+  margin-left: 2rem;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 2rem;
@@ -83,4 +99,22 @@ a {
   padding-bottom: 0;
   padding-top: 5px;
   margin-right: 5px;
+}
+
+@media (min-width: 700px) {
+  .container h1 {
+    color: var(--primary-color);
+    align-self: flex-start;
+    margin-left: 2rem;
+    left: 5rem;
+    top: 2rem;
+    font-weight: 400;
+    font-family: "Permanent Marker", "Pacifico", sans-serif;
+    font-size: 6rem;
+    z-index: 2;
+  }
+
+  .top {
+    background: url("./img/background-view.jpg") no-repeat center 20% / cover;
+  }
 }
