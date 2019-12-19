@@ -4,21 +4,22 @@
   padding: 0;
 }
 h1 {
-  height: 60vh;
+  height: 30vh;
   font-size: 10rem;
 }
 
 body {
-  background-image: linear-gradient(
+  background-color: white;
+  /* background-image: linear-gradient(
     to right,
     rgb(122, 122, 133),
     rgb(255, 255, 255)
-  );
+  ); */
   color: rgba(255, 255, 255);
 }
 
 .skill_item {
-  height: 350px;
+  height: 250px;
   background-color: ghostwhite;
   margin: 10px;
   display: flex;
@@ -26,15 +27,15 @@ body {
 }
 
 .skill_item .image {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   margin: 25px;
   background-color: black;
   border-radius: 30px;
 }
 
 .item_text {
-  height: 300px;
+  height: 200px;
   margin: 25px;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.5);
@@ -48,23 +49,27 @@ body {
 }
 
 header {
-  height: 60vh;
+  margin: 0 15%;
+  height: 30vh;
   background: url(./img/umbrella.jpg) no-repeat 20% / cover;
+  background-position: 0 -0.3%;
 }
 
 header h1 {
   position: relative;
-  top: 30%;
-  left: 20%;
+  top: 10%;
+  left: 10%;
 }
 
 .school h1 {
   background: url(./img/penpaper.jpg);
+  background-position: 70% 20%;
   color: rgb(0, 0, 0);
 }
 
 .skills h1 {
   background: url(./img/biurko.jpg);
+  background-position: 0 30%;
 }
 section h1 {
   text-align: center;
