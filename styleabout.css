@@ -5,6 +5,7 @@
 }
 h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 body {
@@ -23,7 +24,7 @@ header {
 
 header h1 {
   padding: 10px;
-  background: url(./img/umbrella.jpg) no-repeat 20% / cover;
+  background: url(./img/retrocar.jpg) no-repeat 100% 30% / cover;
 }
 
 header p {
@@ -41,17 +42,18 @@ header p {
 
 .skill_item {
   height: 250px;
-  background-color: ghostwhite;
   margin: 10px;
   display: flex;
   border-radius: 30px;
+  
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .skill_item .image {
   width: 300px;
   height: 200px;
   margin: 25px;
-  background-color: black;
+  /* background-color: black; */
   border-radius: 30px;
 }
 
@@ -59,7 +61,6 @@ header p {
   height: 200px;
   margin: 25px;
   width: 100vw;
-  background-color: rgb(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +74,27 @@ header p {
 .skills h1 {
   background: url(./img/biurko.jpg);
 }
-section h1 {
-  text-align: center;
+
+#certificate {
+  background: url(./img/certificate.jpg) center/cover;
+}
+
+#cc {
+  background: url(./img/logocc.jpg) center/cover;
+}
+
+#swps {
+  background: url(./img/logoswps.jpg) center/cover;
 }
 
 /* media queries */
 
 @media (min-width: 700px) {
+  h1 {
+    height: 30vh;
+    font-size: 5rem;
+  }
+
+  .item_text h3 {
+    font-size: 3rem;
 }
