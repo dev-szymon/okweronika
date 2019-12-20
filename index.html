@@ -19,42 +19,130 @@
     />
   </head>
   <body>
-    <header class="top">
-      <div class="container">
-        <h1>OK_Weronika</h1>
-        <ul class="navBar">
-          <li>
-            <a href="about.html"
-              ><img class="icon" src="img/text-lines.svg" />O mnie...</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://pl.linkedin.com/in/weronika-gazda-11250815b?trk=people-guest_profile-result-card_result-card_full-click"
-              ><img class="icon" src="img/linkedin.svg" />LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ok_weronika"
-              ><img class="icon" src="img/instagramcolor.svg" />Obserwuj!</a
-            >
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCFyfJzTz0bFzPEWBAMySjug"
-              ><img class="icon2" src=img/youtube.svg>Subskrybuj!</a
-            >
-          </li>
-          <li><img class="icon" src="img/flight.svg" />Wkrótce...</li>
-        </ul>
-      </div>
-    </header>
-    <footer>
+    <div class="top">
+      <h1>OK_Weronika</h1>
+    </div>
+
+    <nav class="mainnav">
+      <ul class="navBar">
+        <li><img class="icon" src="img/text-lines.svg" />O mnie...</li>
+        <li>
+          <a
+            href="https://pl.linkedin.com/in/weronika-gazda-11250815b?trk=people-guest_profile-result-card_result-card_full-click"
+          >
+            <img class="icon" src="img/linkedin.svg" />LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ok_weronika"
+            ><img class="icon" src="img/instagramcolor.svg" />Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCFyfJzTz0bFzPEWBAMySjug"
+            ><img class="icon2" src=img/youtube.svg>YouTube</a
+          >
+        </li>
+        <li><img class="icon" src="img/flight.svg" />Wkrótce...</li>
+      </ul>
+    </nav>
+    <!-- <footer>
       Icons made by
       <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
         >Freepik</a
       >
       from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-    </footer>
+    </footer> -->
+
+    <div class="about">
+      <nav id="mobile">
+        <ul>
+          <li><img class="icon" src="img/home.svg" /></li>
+          <li><img class="icon" src="img/man-user.svg" /></li>
+          <li><img class="icon" src="img/college-graduation.svg" /></li>
+          <li><img class="icon" src="img/pencil.svg" /></li>
+          <li><img class="icon" src="img/policy.svg" /></li>
+        </ul>
+      </nav>
+      <nav id="desktop" class="hidden">
+        <ul>
+          <li>Bio</li>
+          <li>Wyksztłcenie</li>
+          <li>Umiejętności</li>
+          <li>Doświadczenie</li>
+        </ul>
+      </nav>
+      <section id="bio" class="hidden">
+        <span>O mnie</span>
+        <div class="biotext">
+          <h5>Cześć :)</h5>
+          <p>
+            Przypuszczam, że trafiłeś tu, by się czegoś o mnie dowiedzieć. Jeśli
+            chcesz rozpocząć współpracę ze mną, to zachęcam Cię do kliknięcia w
+            zakładki: „wykształcenie”, „umiejętności” oraz „doświadczenie”,
+            gdzie znajdziesz szczegółowe informacje o moich kompetencjach.
+          </p>
+          <h5>Poznajmy się bliżej!</h5>
+          <p>
+            Nazywam się Weronika Gazda, urodziłam się w grudniu 1996 roku.
+            Jestem zodiakalnym strzelcem, co jest swego rodzaju odpowiedzią na
+            pytanie: „dlaczego uwielbiam podróżować?”. Ze swoich małych i
+            większych podróży tworzę filmy, którymi chętnie dzielę się z
+            użytkownikami platformy YouTube. Kanał OK_Weronika powstał z myślą o
+            wszystkich tych, którzy choć na chwilę chcą przenieść się w nieznane
+            dotąd dla siebie miejsce lub trochę powspominać. Znajdziesz tam
+            klipy z ciekawych miejsc i wydarzeń organizowanych w Warszawie,
+            relacje z najpiękniejszych miast w Europie, a już wkrótce Daily
+            Vlogi z USA…
+          </p>
+          <p>
+            Bez względu na to czy staniesz się moim nowym widzem, bardzo się
+            cieszę, że udało Ci się odwiedzić moją stronę. :)
+          </p>
+        </div>
+      </section>
+      <section id="education" class="hidden">
+        <span>Bio Wykształcenie Umiejętności Doświadczenie</span>
+        <div class="item">
+          <div class="itemicon" id="swps"></div>
+          <div class="itemtext"><h4>Uniwersytet SWPS 2015-2018</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon" id="cc"></div>
+          <div class="itemtext"><h4>Collegium Civitas 2019-2021</h4></div>
+        </div>
+      </section>
+      <section id="skills" class="visible">
+        <span>Umiejętności</span>
+        <div class="item">
+          <div class="itemicon"></div>
+          <div class="itemtext"><h4>Edycja wideo</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon"></div>
+          <div class="itemtext"><h4>Photoshop</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon" id="ang"></div>
+          <div class="itemtext"><h4>Certyfikat B1 ANG</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon"></div>
+          <div class="itemtext"><h4>Edycja wideo</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon"></div>
+          <div class="itemtext"><h4>Photoshop</h4></div>
+        </div>
+        <div class="item">
+          <div class="itemicon" id="ang"></div>
+          <div class="itemtext"><h4>Certyfikat B1 ANG</h4></div>
+        </div>
+      </section>
+      <section id="experience" class="hidden">
+        <span>Doświadczenie</span>
+      </section>
+    </div>
   </body>
 </html>

@@ -24,11 +24,15 @@ a {
   text-decoration: none;
 }
 
+/* background shadow and header */
+
 .top {
-  position: relative;
+  position: fixed;
   height: 100vh;
+  display: flex;
+  justify-content: center;
   width: 100vw;
-  background: url("./img/background-view.jpg") no-repeat 70% -1%;
+  background: url("./img/background-view.jpg") no-repeat 70% 50%;
 }
 
 .top:after {
@@ -38,57 +42,33 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   /*background: rgba(0, 0, 0, 0.6);*/
-  box-shadow: inset 300px 250px 250px #000000;
+  box-shadow: inset 200px 150px 150px #000000;
+}
+.active {
+  background: url("./img/retrocar.jpg") no-repeat 15% 100%;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  width: 100vw;
-  justify-content: center;
-}
-
-/* .container h1 {
-  color: var(--primary-color);
-  position: absolute;
-  margin-left: 2rem;
-  left: 5rem;
-  top: 2rem;
-  font-weight: 400;
-  font-family: "Permanent Marker", "Pacifico", sans-serif;
-  font-size: 6rem;
-  z-index: 2;
-} */
-
-.container h1 {
+.top h1 {
+  position: fixed;
   align-self: center;
   color: var(--primary-color);
   font-weight: 400;
-  margin-top: 5rem;
+  top: 2rem;
   font-family: "Permanent Marker", "Pacifico", sans-serif;
   font-size: 3rem;
-  z-index: 2;
+  z-index: 4;
 }
 
-.navBar {
-  margin-top: 5rem;
-  z-index: 2;
-}
-.navBar li {
-  margin-left: 2rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 10px;
-  font-family: "Monserrat", sans-serif;
+/* main menu  */
+
+.mainnav {
+  display: none;
 }
 
 .icon {
   height: 1.6rem;
-  padding: 0;
   margin-right: 5px;
 }
 
@@ -101,22 +81,157 @@ a {
   margin-right: 5px;
 }
 
+/* About pop-out page styling */
+
+.about {
+  color: var(--primary-color);
+}
+
+/* nav menu */
+
+.about #mobile ul {
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  color: black;
+  z-index: 4;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+/* sections in the about tab */
+
+section {
+  position: relative;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1;
+}
+
+/* title of the section text on mobile */
+section span {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Monserrat", sans-serif;
+  padding: 15px 0;
+  border-bottom: solid 3px;
+  border-color: white;
+  margin-bottom: 20px;
+}
+
+/* items in the sections */
+
+.item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.itemicon {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.itemtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1rem;
+}
+
+/* icons in the section items */
+
+#cc {
+  background: url(./img/logocc.jpg) center/cover;
+}
+
+#swps {
+  background: url(./img/logoswps.jpg) center/cover;
+}
+
+#ang {
+  background: url(./img/certificate.jpg) center/cover;
+}
+
+/* functionality classses */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  position: relative;
+  top: 25vh;
+}
+
 /* media queries */
 
-@media (min-width: 700px) {
-  .container h1 {
-    color: var(--primary-color);
-    align-self: flex-start;
-    margin-left: 2rem;
-    left: 5rem;
-    top: 2rem;
-    font-weight: 400;
-    font-family: "Permanent Marker", "Pacifico", sans-serif;
-    font-size: 6rem;
-    z-index: 2;
-  }
-
+@media (min-width: 900px) {
+  /* background and header */
   .top {
     background: url("./img/background-view.jpg") no-repeat center 20% / cover;
   }
+  .top:after {
+    box-shadow: inset 300px 250px 250px #000000;
+  }
+
+  .active {
+    background: url("./img/retrocar.jpg") no-repeat center 20% / cover;
+  }
+
+  .top h1 {
+    color: var(--primary-color);
+    align-self: flex-start;
+    left: 2rem;
+    top: 1rem;
+    font-weight: 400;
+    font-family: "Permanent Marker", "Pacifico", sans-serif;
+    font-size: 6rem;
+    z-index: 4;
+  }
+
+  .navBar li {
+    margin-left: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px;
+    font-family: "Monserrat", sans-serif;
+  }
+
+  .mainnav {
+    position: fixed;
+    top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 4;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  .visible {
+    position: relative;
+    top: 40vh;
+    left: 40vw;
+    width: 50vw;
+  }
+
+  .itemtext {
+    font-size: 2rem;
+  }
 }
+
+/* The end of media queries */
