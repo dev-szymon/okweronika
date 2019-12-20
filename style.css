@@ -226,8 +226,7 @@ section span {
   .visible {
     position: relative;
     top: 40vh;
-    left: 40vw;
-    width: 50vw;
+    width: 60vw;
   }
 
   .itemtext {
