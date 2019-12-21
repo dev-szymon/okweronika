@@ -244,6 +244,10 @@ section span {
     font-size: 6rem;
   }
 
+  .activeSection {
+    background-color: rgb(0, 0, 0, 0);
+  }
+
   .navBar li {
     margin-left: 2rem;
     font-weight: bold;

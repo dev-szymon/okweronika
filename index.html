@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
@@ -22,13 +23,15 @@
     <div class="top active"></div>
     <div class="shadow"></div>
 
-    <header class="">
+    <header class="activeSection">
       <h1>OK_Weronika</h1>
     </header>
 
     <nav class="mainnav">
       <ul class="navBar">
-        <li><img class="icon" src="img/text-lines.svg" />O mnie...</li>
+        <li class="about-me">
+          <img class="icon" src="img/text-lines.svg" />O mnie...
+        </li>
         <li>
           <a
             href="https://pl.linkedin.com/in/weronika-gazda-11250815b?trk=people-guest_profile-result-card_result-card_full-click"
@@ -59,22 +62,24 @@
     </footer> -->
 
     <div class="about">
-      <nav id="mobile" class="hidden">
+      <nav id="mobile" class="navMobileDesktop">
         <ul>
-          <li><img class="icon" src="img/home.svg" /></li>
-          <li><img class="icon" src="img/man-user.svg" /></li>
-          <li><img class="icon" src="img/college-graduation.svg" /></li>
-          <li><img class="icon" src="img/pencil.svg" /></li>
-          <li><img class="icon" src="img/policy.svg" /></li>
+          <li><img class="home-btn icon" src="img/home.svg" /></li>
+          <li><img class="bio-btn icon" src="img/man-user.svg" /></li>
+          <li>
+            <img class="edu-btn icon" src="img/college-graduation.svg" />
+          </li>
+          <li><img class="skill-btn icon" src="img/pencil.svg" /></li>
+          <li><img class="exp-btn icon" src="img/policy.svg" /></li>
         </ul>
       </nav>
 
-      <nav id="desktop" class="">
+      <nav id="desktop" class="navMobileDesktop">
         <ul>
-          <li class="activeTab">Bio</li>
-          <li>Wyksztłcenie</li>
-          <li>Umiejętności</li>
-          <li>Doświadczenie</li>
+          <li class="bio-btn activeTab">Bio</li>
+          <li class="edu-btn">Wyksztłcenie</li>
+          <li class="skill-btn">Umiejętności</li>
+          <li class="exp-btn">Doświadczenie</li>
         </ul>
       </nav>
 
@@ -140,5 +145,7 @@
         <span>Doświadczenie</span>
       </section>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
