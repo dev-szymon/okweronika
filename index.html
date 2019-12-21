@@ -19,10 +19,10 @@
     />
   </head>
   <body>
-    <div class="top"></div>
+    <div class="top active"></div>
     <div class="shadow"></div>
 
-    <header>
+    <header class="">
       <h1>OK_Weronika</h1>
     </header>
 
@@ -59,7 +59,7 @@
     </footer> -->
 
     <div class="about">
-      <nav id="mobile">
+      <nav id="mobile" class="hidden">
         <ul>
           <li><img class="icon" src="img/home.svg" /></li>
           <li><img class="icon" src="img/man-user.svg" /></li>
@@ -68,15 +68,17 @@
           <li><img class="icon" src="img/policy.svg" /></li>
         </ul>
       </nav>
-      <nav id="desktop" class="hidden">
+
+      <nav id="desktop" class="">
         <ul>
-          <li>Bio</li>
+          <li class="activeTab">Bio</li>
           <li>Wyksztłcenie</li>
           <li>Umiejętności</li>
           <li>Doświadczenie</li>
         </ul>
       </nav>
-      <section id="bio" class="hidden">
+
+      <section id="bio" class="">
         <span>O mnie</span>
         <div class="biotext">
           <h5>Cześć :)</h5>
@@ -105,8 +107,9 @@
           </p>
         </div>
       </section>
+
       <section id="education" class="hidden">
-        <span>Bio Wykształcenie Umiejętności Doświadczenie</span>
+        <span>Wykształcenie</span>
         <div class="item">
           <div class="itemicon" id="swps"></div>
           <div class="itemtext"><h4>Uniwersytet SWPS 2015-2018</h4></div>
@@ -116,33 +119,23 @@
           <div class="itemtext"><h4>Collegium Civitas 2019-2021</h4></div>
         </div>
       </section>
-      <section id="skills" class="visible">
+
+      <section id="skills" class="hidden">
         <span>Umiejętności</span>
         <div class="item">
-          <div class="itemicon"></div>
+          <div class="itemicon" id="imovie"></div>
           <div class="itemtext"><h4>Edycja wideo</h4></div>
         </div>
         <div class="item">
-          <div class="itemicon"></div>
+          <div class="itemicon" id="ps"></div>
           <div class="itemtext"><h4>Photoshop</h4></div>
         </div>
         <div class="item">
           <div class="itemicon" id="ang"></div>
-          <div class="itemtext"><h4>Certyfikat B1 ANG</h4></div>
-        </div>
-        <div class="item">
-          <div class="itemicon"></div>
-          <div class="itemtext"><h4>Edycja wideo</h4></div>
-        </div>
-        <div class="item">
-          <div class="itemicon"></div>
-          <div class="itemtext"><h4>Photoshop</h4></div>
-        </div>
-        <div class="item">
-          <div class="itemicon" id="ang"></div>
-          <div class="itemtext"><h4>Certyfikat B1 ANG</h4></div>
+          <div class="itemtext"><h4>Certyfikat B1 ang</h4></div>
         </div>
       </section>
+
       <section id="experience" class="hidden">
         <span>Doświadczenie</span>
       </section>
