@@ -136,7 +136,8 @@ header h1 {
 }
 
 .active-tab {
-  background-color: grey;
+  border-top: solid 5px;
+  border-color: black;
 }
 
 /* sections in the about tab */
