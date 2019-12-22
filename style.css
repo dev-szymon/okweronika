@@ -57,6 +57,7 @@ header {
   padding-bottom: 2rem;
   z-index: 4;
   justify-content: center;
+  cursor: pointer;
 }
 
 header h1 {

@@ -15,6 +15,8 @@ const homeBtn = document.querySelectorAll(".home-btn");
 const sectionsAll = document.querySelectorAll("section");
 const btns = document.querySelectorAll(".btn");
 
+header.addEventListener("click", goHome);
+
 aboutMe.addEventListener("click", hideMainNav);
 
 function hideMainNav() {
