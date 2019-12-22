@@ -23,6 +23,7 @@ function hideMainNav() {
   mainNav.classList.toggle("hidden-nav");
   backgroundTop.classList.add("opened-about");
   header.classList.add("active-section");
+  sectionsAll.forEach(e => e.classList.add("hidden"));
   bioSection.classList.remove("hidden");
   navMobDesk.forEach(e => e.classList.remove("hidden"));
   btns.forEach(e => e.classList.remove("active-tab"));
