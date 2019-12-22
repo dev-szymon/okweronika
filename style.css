@@ -25,6 +25,7 @@ a {
   height: 100vh;
   width: 100vw;
   background: url("./img/background-view.jpg") no-repeat 70% 20%;
+  transition: 1s ease-in-out all;
 }
 
 .shadow {
@@ -47,6 +48,7 @@ a {
 
 .opened-about {
   background: url("./img/retrocar.jpg") no-repeat 15% 70%;
+  transition: 1s ease-in-out all;
 }
 
 header {
