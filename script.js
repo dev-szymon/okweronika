@@ -29,6 +29,7 @@ homeBtn.forEach(e => e.addEventListener("click", goHome));
 
 function goHome() {
   mainNav.classList.toggle("hidden-nav");
+  window.scrollTo(0, 0);
   backgroundTop.classList.remove("opened-about");
   header.classList.remove("active-section");
   sectionsAll.forEach(e => e.classList.add("hidden"));
@@ -39,6 +40,7 @@ bioBtn.forEach(e => e.addEventListener("click", openBio));
 
 function openBio() {
   sectionsAll.forEach(e => e.classList.add("hidden"));
+  window.scrollTo(0, 0);
   bioSection.classList.remove("hidden");
   btns.forEach(e => e.classList.remove("active-tab"));
   bioBtn.forEach(e => e.classList.add("active-tab"));
@@ -48,6 +50,7 @@ eduBtn.forEach(e => e.addEventListener("click", openEdu));
 
 function openEdu() {
   sectionsAll.forEach(e => e.classList.add("hidden"));
+  window.scrollTo(0, 0);
   eduSection.classList.remove("hidden");
   btns.forEach(e => e.classList.remove("active-tab"));
   eduBtn.forEach(e => e.classList.add("active-tab"));
@@ -57,6 +60,7 @@ skillBtn.forEach(e => e.addEventListener("click", openSkill));
 
 function openSkill() {
   sectionsAll.forEach(e => e.classList.add("hidden"));
+  window.scrollTo(0, 0);
   skillSection.classList.remove("hidden");
   btns.forEach(e => e.classList.remove("active-tab"));
   skillBtn.forEach(e => e.classList.add("active-tab"));
@@ -66,6 +70,7 @@ expBtn.forEach(e => e.addEventListener("click", openExp));
 
 function openExp() {
   sectionsAll.forEach(e => e.classList.add("hidden"));
+  window.scrollTo(0, 0);
   expSection.classList.remove("hidden");
   btns.forEach(e => e.classList.remove("active-tab"));
   expBtn.forEach(e => e.classList.add("active-tab"));
