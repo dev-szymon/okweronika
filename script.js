@@ -23,7 +23,7 @@ function hideMainNav() {
   header.classList.add("active-section");
   bioSection.classList.remove("hidden");
   navMobDesk.forEach(e => e.classList.remove("hidden"));
-  bioBtn.classList.add("active-tab");
+  bioBtn.forEach(e => e.classList.add("active-tab"));
 }
 
 homeBtn.forEach(e => e.addEventListener("click", goHome));
