@@ -45,8 +45,8 @@ a {
   box-shadow: inset 200px 250px 150px #000000;
 }
 
-.openedAbout {
-  background: url("./img/retrocar.jpg") no-repeat 15% 100%;
+.opened-about {
+  background: url("./img/retrocar.jpg") no-repeat 15% 70%;
 }
 
 header {
@@ -66,12 +66,12 @@ header h1 {
   font-size: 3rem;
 }
 
-.activeSection {
+.active-section {
   background-color: black;
 }
 /* main menu  */
 
-.mainnav {
+.main-nav {
   position: fixed;
   top: 35vh;
   left: 3rem;
@@ -80,13 +80,14 @@ header h1 {
   justify-content: flex-start;
   font-size: 2.5rem;
   z-index: 4;
+  cursor: pointer;
 }
 
-.hiddenNav {
+.hidden-nav {
   transform: translate(-200%);
 }
 
-.mainnav li {
+.main-nav li {
   padding: 5px 0;
   font-weight: bold;
   cursor: pointer;
@@ -122,6 +123,20 @@ header h1 {
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
+}
+
+#mobile li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.active-tab {
+  background-color: grey;
 }
 
 /* sections in the about tab */
@@ -224,14 +239,15 @@ section span {
   }
 
   .shadow:after {
-    box-shadow: inset 300px 250px 250px #000000;
+    box-shadow: inset 300px 300px 250px #000000;
   }
 
-  .active {
+  .opened-about {
     background: url("./img/retrocar.jpg") no-repeat center 20% / cover;
   }
 
   header {
+    width: fit-content;
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 5;
@@ -244,18 +260,18 @@ section span {
     font-size: 6rem;
   }
 
-  .activeSection {
+  .active-section {
     background-color: rgb(0, 0, 0, 0);
   }
 
-  .navBar li {
+  .nav-bar li {
     margin-left: 2rem;
     font-weight: bold;
     font-size: 2rem;
     padding: 10px;
   }
 
-  .mainnav {
+  .main-nav {
     position: fixed;
     top: 15rem;
     display: flex;
@@ -263,12 +279,15 @@ section span {
     justify-content: flex-start;
     z-index: 5;
   }
+  .hidden-nav {
+    transform: translate(0);
+  }
 
   #mobile {
     display: none;
   }
 
-  #desktop {
+  .nav-mobile-desktop {
     position: fixed;
     top: 0;
     display: flex;
@@ -280,11 +299,11 @@ section span {
     z-index: 4;
   }
 
-  #desktop ul {
+  .nav-mobile-desktop ul {
     margin-right: 2rem;
   }
 
-  #desktop li {
+  .nav-mobile-desktop li {
     font-size: 1rem;
     font-weight: bold;
     padding: 0 10px 5px 10px;
@@ -292,7 +311,7 @@ section span {
     cursor: pointer;
   }
 
-  .activeTab {
+  .active-tab {
     border-bottom: solid 5px;
     border-color: white;
   }
@@ -308,6 +327,10 @@ section span {
   }
 
   section span {
+    display: none;
+  }
+
+  .hidden {
     display: none;
   }
 }
