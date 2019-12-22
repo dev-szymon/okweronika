@@ -312,6 +312,7 @@ section span {
   }
 
   .active-tab {
+    background-color: black;
     border-bottom: solid 5px;
     border-color: white;
   }
