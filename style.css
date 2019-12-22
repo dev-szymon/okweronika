@@ -342,3 +342,8 @@ section span {
 /* title of the section text on desktop */
 
 /* The end of media queries */
+@media (max-height: 800px) {
+  .opened-about {
+    background: url("./img/retrocar.jpg") no-repeat 15% -20%;
+  }
+}
