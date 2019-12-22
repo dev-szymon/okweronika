@@ -233,6 +233,12 @@ section span {
 
 /* media queries */
 
+@media (max-height: 750px) {
+  .opened-about {
+    background: url("./img/retrocar.jpg") no-repeat 15% -20%;
+  }
+}
+
 @media (min-width: 900px) {
   /* background and header */
   .top {
@@ -342,8 +348,3 @@ section span {
 /* title of the section text on desktop */
 
 /* The end of media queries */
-@media (max-height: 800px) {
-  .opened-about {
-    background: url("./img/retrocar.jpg") no-repeat 15% -20%;
-  }
-}
