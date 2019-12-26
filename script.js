@@ -14,8 +14,17 @@ const expSection = document.querySelector("#experience");
 const homeBtn = document.querySelectorAll(".home-btn");
 const sectionsAll = document.querySelectorAll("section");
 const btns = document.querySelectorAll(".btn");
+const cmngSoon = document.querySelector(".comming-soon");
+const soonTab = document.querySelector("#commingsoon");
 
 header.addEventListener("click", goHome);
+
+cmngSoon.addEventListener("click", showSoon);
+
+function showSoon() {
+  sectionsAll.forEach(e => e.classList.add("hidden"));
+  soonTab.classList.remove("hidden");
+}
 
 aboutMe.addEventListener("click", hideMainNav);
 
