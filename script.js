@@ -22,13 +22,17 @@ header.addEventListener("click", goHome);
 cmngSoon.addEventListener("click", showSoon);
 
 function showSoon() {
+  window.scrollTo(0, 0);
+  mainNav.classList.toggle("hidden-nav");
   sectionsAll.forEach(e => e.classList.add("hidden"));
+  navMobDesk.forEach(e => e.classList.add("hidden"));
   soonTab.classList.remove("hidden");
 }
 
 aboutMe.addEventListener("click", hideMainNav);
 
 function hideMainNav() {
+  window.scrollTo(0, 0);
   mainNav.classList.toggle("hidden-nav");
   backgroundTop.classList.add("opened-about");
   header.classList.add("active-section");
