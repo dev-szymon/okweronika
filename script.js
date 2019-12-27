@@ -15,7 +15,8 @@ const homeBtn = document.querySelectorAll(".home-btn");
 const sectionsAll = document.querySelectorAll("section");
 const btns = document.querySelectorAll(".btn");
 const cmngSoon = document.querySelector(".comming-soon");
-const soonTab = document.querySelector("#commingsoon");
+
+let isSectionOpen = false;
 
 header.addEventListener("click", goHome);
 
@@ -55,42 +56,77 @@ function goHome() {
   navMobDesk.forEach(e => e.classList.add("hidden"));
 }
 
+function resetTabs() {
+  sectionsAll.forEach(e => e.classList.add("hidden"));
+  window.scrollTo(0, 0);
+  btns.forEach(e => e.classList.remove("active-tab"));
+}
+
 bioBtn.forEach(e => e.addEventListener("click", openBio));
 
 function openBio() {
-  sectionsAll.forEach(e => e.classList.add("hidden"));
-  window.scrollTo(0, 0);
+  resetTabs();
   bioSection.classList.remove("hidden");
-  btns.forEach(e => e.classList.remove("active-tab"));
   bioBtn.forEach(e => e.classList.add("active-tab"));
 }
 
 eduBtn.forEach(e => e.addEventListener("click", openEdu));
 
 function openEdu() {
-  sectionsAll.forEach(e => e.classList.add("hidden"));
-  window.scrollTo(0, 0);
+  resetTabs();
   eduSection.classList.remove("hidden");
-  btns.forEach(e => e.classList.remove("active-tab"));
   eduBtn.forEach(e => e.classList.add("active-tab"));
 }
 
 skillBtn.forEach(e => e.addEventListener("click", openSkill));
 
 function openSkill() {
-  sectionsAll.forEach(e => e.classList.add("hidden"));
-  window.scrollTo(0, 0);
+  resetTabs();
   skillSection.classList.remove("hidden");
-  btns.forEach(e => e.classList.remove("active-tab"));
   skillBtn.forEach(e => e.classList.add("active-tab"));
 }
 
 expBtn.forEach(e => e.addEventListener("click", openExp));
 
 function openExp() {
-  sectionsAll.forEach(e => e.classList.add("hidden"));
-  window.scrollTo(0, 0);
+  resetTabs();
   expSection.classList.remove("hidden");
-  btns.forEach(e => e.classList.remove("active-tab"));
   expBtn.forEach(e => e.classList.add("active-tab"));
+}
+
+// Soon tab and sections
+
+const soonTab = document.querySelector("#commingsoon");
+const slvkTab = document.querySelector("#slvk-tab");
+const usaTab = document.querySelector("#usa-tab");
+const espTab = document.querySelector("#esp-tab");
+const gbTab = document.querySelector("#gb-tab");
+const slvkBtn = document.querySelector("#slvk-btn");
+const espBtn = document.querySelector("#esp-btn");
+const usaBtn = document.querySelector("#usa-btn");
+const gbBtn = document.querySelector("#gb-btn");
+
+slvkBtn.addEventListener("click", showSlvkTab);
+espBtn.addEventListener("click", showEspTab);
+usaBtn.addEventListener("click", showUsaTab);
+gbBtn.addEventListener("click", showGbTab);
+
+function showSlvkTab() {
+  resetTabs();
+  slvkTab.classList.remove("hidden");
+}
+
+function showEspTab() {
+  resetTabs();
+  espTab.classList.remove("hidden");
+}
+
+function showUsaTab() {
+  resetTabs();
+  usaTab.classList.remove("hidden");
+}
+
+function showGbTab() {
+  resetTabs();
+  gbTab.classList.remove("hidden");
 }

@@ -266,28 +266,59 @@ section span {
 
 .flag-icon {
   height: 200px;
-  height: 200px;
+  width: 200px;
   position: absolute;
+  cursor: pointer;
 }
 
-#slvk {
+.sm-flag-icon {
+  height: 50px;
+  width: 50px;
+  pointer-events: none;
+}
+
+#slvk-btn {
   top: 0;
   left: 0;
 }
 
-#esp {
+#esp-btn {
   top: 80px;
   right: 0;
 }
 
-#usa {
+#usa-btn {
   top: 160px;
   left: 0;
 }
 
-#gb {
+#gb-btn {
   top: 240px;
   right: 0;
+}
+
+.country-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.country-header h2 {
+  font-size: 2rem;
+}
+
+.soon-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.soon-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 
 /* functionality classses */
@@ -312,6 +343,12 @@ section span {
     top: 0;
   }
 
+  .country-header {
+    position: absolute;
+    width: fit-content;
+    right: 15rem;
+    bottom: 1rem;
+  }
   /* background and header */
   .top {
     background: url("./img/background-view.jpg") no-repeat center 20% / cover;
