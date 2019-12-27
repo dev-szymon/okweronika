@@ -243,7 +243,7 @@ section span {
 .wrapper {
   position: relative;
   width: 340px;
-  height: 600px;
+  height: 400px;
 }
 
 .soon-top-bar {
@@ -313,6 +313,7 @@ section span {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .soon-icon {
