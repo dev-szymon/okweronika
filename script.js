@@ -24,6 +24,7 @@ cmngSoon.addEventListener("click", showSoon);
 function showSoon() {
   window.scrollTo(0, 0);
   mainNav.classList.toggle("hidden-nav");
+  header.classList.add("active-section");
   sectionsAll.forEach(e => e.classList.add("hidden"));
   navMobDesk.forEach(e => e.classList.add("hidden"));
   soonTab.classList.remove("hidden");
