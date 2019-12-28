@@ -158,3 +158,14 @@ function showGbTab() {
   flagSmIcons.forEach(e => e.classList.remove("active-flag"));
   gbSmBtn.forEach(e => e.classList.add("active-flag"));
 }
+
+// footer and credits
+
+const creditsBtn = document.querySelector(".credits-tab");
+const creditsTab = document.querySelector(".credits");
+
+creditsBtn.addEventListener("click", openCredits);
+
+function openCredits() {
+  creditsTab.classList.toggle("hidden");
+}

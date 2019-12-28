@@ -116,6 +116,17 @@ header h1 {
   margin-right: 5px;
 }
 
+.credits-tab {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.8rem;
+  width: fit-content;
+  cursor: pointer;
+  height: 25px;
+  z-index: 5;
+}
+
 /* About pop-out page styling */
 
 /* nav menu */
@@ -340,6 +351,15 @@ section span {
 
 .hidden {
   display: none;
+}
+
+/* footer */
+
+.credits {
+  position: fixed;
+  bottom: 3rem;
+  left: 1rem;
+  z-index: 5;
 }
 
 /* media queries */
