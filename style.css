@@ -484,6 +484,7 @@ section span {
   }
 
   .wrapper-small {
+    position: relative;
     display: block;
     width: 100%;
   }
