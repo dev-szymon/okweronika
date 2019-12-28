@@ -335,10 +335,6 @@ section span {
 .active-flag {
   filter: drop-shadow(5px 5px 5px white);
 }
-.wrapper-small {
-  position: fixed;
-  bottom: 0;
-}
 
 /* functionality classses */
 
@@ -353,7 +349,29 @@ section span {
     background: url("./img/retrocar.jpg") no-repeat 15% -20%;
   }
 }
+@media (max-width: 900px) {
+  .wrapper-small {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: black;
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
+  .wrapper-small .flag-icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+  }
+
+  /* .active-flag {
+    filter: drop-shadow(5px 5px 5px black);
+  } */
+}
 @media (min-width: 900px) {
   .soon-top-bar {
     position: fixed;
