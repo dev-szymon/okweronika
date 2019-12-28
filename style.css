@@ -51,6 +51,11 @@ a {
   transition: 1s ease-in-out all;
 }
 
+.opened-soon {
+  background: url("./img/wallartsm.jpg") no-repeat 30%;
+  transition: 1s ease-in-out all;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -65,6 +70,7 @@ header {
 header h1 {
   align-self: center;
   font-weight: 400;
+  height: 2rem;
   font-family: "Permanent Marker", "Pacifico", sans-serif;
   font-size: 3rem;
 }
@@ -147,7 +153,7 @@ header h1 {
 
 section {
   position: absolute;
-  top: 13rem;
+  top: 11rem;
   width: 100vw;
   height: fit-content;
   background-color: rgb(0, 0, 0, 0.5);
@@ -163,7 +169,7 @@ section {
 section span {
   position: fixed;
   height: 5rem;
-  top: 8rem;
+  top: 6rem;
   width: 100%;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -177,6 +183,9 @@ section span {
 
 /* items in the sections */
 
+.margin-p {
+  margin-top: 20px;
+}
 .item {
   display: flex;
   justify-content: space-between;
@@ -251,7 +260,8 @@ section span {
   display: flex;
   justify-content: center;
   height: 5rem;
-  top: 8rem;
+  top: 6rem;
+  left: 0;
   width: 100%;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -322,6 +332,13 @@ section span {
   margin-right: 20px;
 }
 
+.active-flag {
+  filter: drop-shadow(5px 5px 5px white);
+}
+.wrapper-small {
+  display: none;
+}
+
 /* functionality classses */
 
 .hidden {
@@ -361,6 +378,12 @@ section span {
 
   .opened-about {
     background: url("./img/retrocar.jpg") no-repeat center 20% / cover;
+    transition: 1s ease-in-out all;
+  }
+
+  .opened-soon {
+    background: url("./img/wallartsm.jpg") no-repeat center / cover;
+    transition: 1s ease-in-out all;
   }
 
   header {
@@ -450,12 +473,51 @@ section span {
   section {
     position: relative;
     left: 30vw;
+    top: 13rem;
     width: 60vw;
     background-color: rgb(0, 0, 0, 0.8);
   }
 
   section span {
     display: none;
+  }
+
+  .wrapper-small {
+    display: block;
+    width: 100%;
+  }
+
+  .country-container {
+    margin-top: 80px;
+  }
+
+  .slvk-btn,
+  .esp-btn,
+  .usa-btn,
+  .gb-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .slvk-btn {
+    top: 10px;
+    left: 10px;
+  }
+
+  .esp-btn {
+    top: 30px;
+    left: 45px;
+  }
+
+  .usa-btn {
+    top: 10px;
+    left: 80px;
+  }
+
+  .gb-btn {
+    top: 30px;
+    left: 115px;
   }
 
   .hidden {
