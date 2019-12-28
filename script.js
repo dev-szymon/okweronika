@@ -31,6 +31,7 @@ function showSoon() {
   sectionsAll.forEach(e => e.classList.add("hidden"));
   navMobDesk.forEach(e => e.classList.add("hidden"));
   soonTab.classList.remove("hidden");
+  hideCredits();
   isSectionOpen = true;
 }
 
@@ -44,6 +45,7 @@ function hideMainNav() {
   header.classList.add("active-section");
   sectionsAll.forEach(e => e.classList.add("hidden"));
   bioSection.classList.remove("hidden");
+  hideCredits();
   navMobDesk.forEach(e => e.classList.remove("hidden"));
   btns.forEach(e => e.classList.remove("active-tab"));
   bioBtn.forEach(e => e.classList.add("active-tab"));
@@ -62,6 +64,7 @@ function goHome() {
   header.classList.remove("active-section");
   sectionsAll.forEach(e => e.classList.add("hidden"));
   navMobDesk.forEach(e => e.classList.add("hidden"));
+  creditsBtn.classList.remove("hidden");
   isSectionOpen = false;
 }
 
@@ -160,12 +163,16 @@ function showGbTab() {
 }
 
 // footer and credits
-
 const creditsBtn = document.querySelector(".credits-tab");
 const creditsTab = document.querySelector(".credits");
 
-creditsBtn.addEventListener("click", openCredits);
+creditsBtn.addEventListener("click", toggleCredits);
 
-function openCredits() {
+function hideCredits() {
+  creditsTab.classList.add("hidden");
+  creditsBtn.classList.add("hidden");
+}
+
+function toggleCredits() {
   creditsTab.classList.toggle("hidden");
 }

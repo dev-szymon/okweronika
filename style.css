@@ -82,7 +82,7 @@ header h1 {
 
 .main-nav {
   position: fixed;
-  top: 35vh;
+  top: 30vh;
   left: 3rem;
   display: flex;
   align-items: center;
