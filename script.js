@@ -176,3 +176,19 @@ function hideCredits() {
 function toggleCredits() {
   creditsTab.classList.toggle("hidden");
 }
+
+// needs working on
+
+const latestInsta = document.querySelector(".last-insta");
+
+const showNode = () =>
+  fetch("https://www.instagram.com/ok_weronika/?__a=1")
+    .then(response => response.json())
+    .then(
+      data =>
+        data.graphql.user.edge_owner_to_timeline_media.edges[0].node.display_url
+    )
+    .then(resData => {
+      const returnedJSON = JSON.stringify(resData);
+      return returnedJSON;
+    });

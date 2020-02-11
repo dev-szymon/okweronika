@@ -160,6 +160,13 @@ header h1 {
   border-color: black;
 }
 
+/* last instagram post */
+
+.last-insta {
+  z-index: 7;
+  display: block;
+  width: 100%;
+}
 /* sections in the about tab */
 
 section {
